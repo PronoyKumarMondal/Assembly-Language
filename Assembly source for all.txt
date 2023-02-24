@@ -1,0 +1,21 @@
+.model small
+.stack 100h
+.data ;declare variable here
+.code
+main proc  
+    ;initialize data segment
+    mov ax,@data
+    mov ds,ax               
+;write code here
+    
+    
+    
+
+;return control to DOS    
+    
+mov ah,4ch
+int 21h
+main endp
+    end main
+
+
